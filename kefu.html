@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/public.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="nav-bg">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">在线客服</h1>
+		</header>
+		<div class="mui-content">
+		    <!--  客服头像  -->
+		    <div class="kefu-view-portrait">
+		    	<img src="img/kefu/kefu-portrait.png" alt="" />
+		    	<div class="kefu-portrait-consult">
+		    		<button id="kefu-consult">点击咨询</button>
+		    		<p>服务热线：400-400-4000</p>
+		    	</div>
+		    </div>
+		    <!--  常见问题  -->
+		    <div class="kefu-view-issue">
+		    	<h2 class="clearfix">
+		    		<span class='mui-pull-left'>常见问题</span>
+		    		<span class="mui-pull-right"><img src="img/kefu/refresh.png" alt="" /></span>
+		    	</h2>
+		    	<ul class="mui-table-view">
+					<li class="mui-table-view-cell">1.晨晨借条怎么注册？</li>
+			        <li class="mui-table-view-cell">2.晨晨借条利息如何计算？</li>
+			        <li class="mui-table-view-cell">3.提前还款有违约金吗？</li>
+			        <li class="mui-table-view-cell">4.提前还款利息怎么算？</li>
+			        <li class="mui-table-view-cell">5.如何申请借款？</li>
+			        <li class="mui-table-view-cell">6.晨晨借条借款后未到账怎么办？</li>
+			        <li class="mui-table-view-cell">7.借条借款额度是多少？</li>
+			        <li class="mui-table-view-cell">8.晨晨借条还款日可以修改吗？</li>
+			        <li class="mui-table-view-cell">9.申请借条需要什么条件？</li>
+				</ul>
+		    </div>
+		</div>
+		<script src='js/tap.js'></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+			  interval:1600   
+			});
+			//console.log(mui('#kefu-consult')[0])
+			//跳转场景
+			tapNewView(mui('#kefu-consult')[0], 'kefu/kefu_communication.html', 'kefu_communication');
+		</script>
+	</body>
+
+</html>

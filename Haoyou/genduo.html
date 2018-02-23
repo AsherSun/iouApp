@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+		<style type="text/css">
+			.mui-bar{
+				background-color: rgb(230,133,36);
+			}
+			.mui-title{
+				color:#fff;
+			}
+			.mui-bar a{
+				color:#fff;
+			}
+			.mui-bar span{	
+				font-size:17px;
+			}
+			.mui-table-view-cell:after {
+				height: 0px;
+			}
+			.mui-table-view-cell{
+				margin-top:20px;
+				background-color: rgb(230,133,36);
+				color:#fff;
+			}
+			.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+				color:#fff;
+			}
+			.mui-table-view-cell>a:not(.mui-btn).mui-active{
+				background-color:rgb(230,133,36);
+			}
+		</style>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
+		    <h1 class="mui-title">更多</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-table-view-cell">
+                <a href="jiaoyi.html" class="mui-navigate-right">
+                    向TA转帐
+                </a>
+            </div>
+            <div class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    设置备注
+                </a>
+            </div>
+            <div class="mui-table-view-cell" style="background-color:rgb(230,133,36);">加入黑名单
+	            <div id="confirmBtn" class="mui-switch mui-active">
+	                <div class="mui-switch-handle"></div>
+	            </div>
+		    </div>
+		</div>       
+		<!--确认消息框-->
+		<script type="text/javascript">
+			
+		</script>	
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			document.getElementById("confirmBtn").addEventListener('toggle', function() {
+				var btnArray = ['否', '是'];
+				mui.confirm('加入到黑名单后你们将自动解除好友关系，TA不能再关注您或者给您发消息', function(e){
+					if(e.index==0){
+						alert(1);
+					}else{
+						alert(2);
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

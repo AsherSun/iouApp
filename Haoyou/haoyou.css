@@ -1,0 +1,77 @@
+.mui-bar{
+	background-color: rgb(230,133,36);
+}
+.mui-title{
+	color:#fff;
+}
+.mui-bar a{
+	color:#fff;
+}
+.mui-bar span{	
+	font-size:17px;
+}
+.mui-bar-tab .mui-tab-item{
+	color:#fff;
+}
+.mui-search{
+	width:90%;
+	margin: 10px auto 0;
+}
+.mui-search input[type=search] {
+   background: #fff;
+   border:2px solid rgb(230,133,36);
+}
+.mui-search .mui-placeholder{	
+	background: #fff;
+	color: rgb(230,133,36);
+	border:2px solid rgb(230,133,36);
+}
+.mui-card{
+	margin:0;
+	border-radius: 0;
+}
+.xg{
+	padding:8px 0;
+	min-height:60px;
+	border-top:10px solid #ccc;
+	border-bottom: 4px solid #ccc;
+	font-family: "方正兰亭黑";
+	border-radius: 0;
+	
+}
+.xg span{
+	border-left:8px solid #e68524;
+	padding-left:5px;
+} 
+.mui-card-content{
+	display:flex;
+	justify-content:space-around;
+	margin:18px 0 0;
+}
+.mui-card-content .mui-btn{
+	font-size:20px;
+}
+.mui-table-view{
+	width:100%;
+}
+.mui-media-object {
+    border: 2px solid #e68524;
+    padding: 1px;
+}
+.mui-card-header:after ,.mui-card-footer:before{
+	height:0;
+}
+.mui-card-footer{
+	justify-content: center;
+	border-bottom: 1px solid rgb(204,204,204);
+}
+.mui-card-footer a{
+	color:#000000;
+	font-size:16px;
+}
+.h_4{
+	padding-left:20px;
+}
+
+
+

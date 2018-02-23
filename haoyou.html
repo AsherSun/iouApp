@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="Haoyou/haoyou.css" />
+		<style>
+			.input_a{
+				background: #fff;
+			    color: rgb(230,133,36);
+			    border: 2px solid rgb(230,133,36);
+			    text-align: center;
+			    width:100%;
+			    display:inline-block;
+			    padding:5px 0px 3px;
+			    margin-bottom:10px;
+			    border-radius: 5px;
+			    font-size:14px;
+			}
+			.mui-icon-search{
+				font-size:18px;
+				margin-right:2px;
+			}
+			.input_a:hover{
+				 color: rgb(230,133,36);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav">
+		    <a  class=" mui-icon mui-icon-plus mui-pull-right main-header-btn"><span>更多</span></a>
+		    <h1 class="mui-title">好友</h1>
+		</header>
+		<!--内容-->
+		<div class="mui-content">
+			<div class="mui-input-row mui-search">
+				<a class="input_a">
+					<i class="mui-icon mui-icon-search"></i>搜找人 / 好友
+				</a>
+			</div>
+			
+			<!--我的好友-->
+			<div class="mui-card">
+				<div class="mui-card-header xg"><span>我的好友</span></div>
+				
+			    <ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a class="haoyou-view-jiaoyi">
+							<img class="mui-media-object mui-pull-left" src="Haoyou/img/chenmei.png">
+							<div class="mui-media-body">
+								晨宝
+								<p class='mui-ellipsis'>[WiFi在线]</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a class="haoyou-view-jiaoyi">
+							<img class="mui-media-object mui-pull-left" src="Haoyou/img/chenbao.png">
+							<div class="mui-media-body">
+								木屋
+								<p class='mui-ellipsis'>[WiFi在线]</p>
+							</div>
+						</a>
+					</li>
+				</ul>   	
+			</div>
+			<!--好友动态-->
+			<div class="mui-card">
+				<div class="mui-card-header xg"><span>好友动态</span></div>
+				<div class="mui-card-header mui-card-media">
+					<img class="mui-media-object mui-pull-left" src="Haoyou/img/chenmei.png">
+					<div class="mui-media-body">
+						小M
+						<p>06-30 15:30</p>
+					</div>	
+				</div>
+				<h4 class="h_4">[有奖互动]怎样降低出借风险？</h4>
+				<div class="mui-card-content" >
+					<img src="Haoyou/img/banner-1.jpg" alt="" width="80%"/>
+				</div>
+				<div class="mui-card-footer">					
+					<a class="mui-card-link">立即参与</a>
+				</div>
+				
+				<div class="mui-card-header mui-card-media">
+					<img class="mui-media-object mui-pull-left" src="Haoyou/img/chenmei.png">
+					<div class="mui-media-body">
+						小M
+						<p>06-30 15:30</p>
+					</div>	
+				</div>
+				<h4 class="h_4">[有奖互动]怎样降低出借风险？</h4>
+				<div class="mui-card-content" >
+					<img src="Haoyou/img/banner-1.jpg" alt="" width="80%"/>
+				</div>
+				<div class="mui-card-footer">					
+					<a class="mui-card-link">立即参与</a>
+				</div>
+				
+			</div>	
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/tap.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//跳转场景
+			tapNewView(mui('.main-header-btn')[0], './Haoyou/genduo.html', 'genduo');
+			tapNewView(mui('.input_a')[0], './Haoyou/seach.html', 'seach');
+			tapNewView(mui('.haoyou-view-jiaoyi')[0], './Haoyou/jiaoyi.html', 'jiaoyi');
+			tapNewView(mui('.haoyou-view-jiaoyi')[1], './Haoyou/jiaoyi.html', 'jiaoyi');
+		</script>
+	</body>
+
+</html>

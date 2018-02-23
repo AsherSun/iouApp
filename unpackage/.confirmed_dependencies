@@ -1,0 +1,156 @@
+{
+  "index.html": {
+    "resources": [
+      "img/haoyou.png",
+      "img/faxian.png",
+      "img/shouye.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/qianbao.png",
+      "img/jiekuan.png",
+      "main.html",
+      "css/public.css"
+    ],
+    "refer": [
+      "main.html",
+      "faxian.html",
+      "qianbao.html",
+      "haoyou.html",
+      "jiekuan.html"
+    ]
+  },
+  "main.html": {
+    "resources": [
+      "css/public.css",
+      "img/banner-2.jpg",
+      "img/banner-3.jpg",
+      "img/banner-1.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/kefu.jpg",
+      "js/tap.js"
+    ],
+    "refer": [
+      "kefu.html"
+    ]
+  },
+  "faxian.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "jiekuan.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "Jiekuan/jiekuan.css",
+      "js/tap.js"
+    ],
+    "refer": [
+      "Jiekuan/xieyi.html"
+    ]
+  },
+  "qianbao.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "haoyou.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "Haoyou/img/hý.png",
+      "Haoyou/haoyou.css",
+      "Haoyou/img/banner-1.jpg",
+      "Haoyou/img/hý.png",
+      "Haoyou/img/hý.png",
+      "Haoyou/img/chenmei.png",
+      "Haoyou/img/chenbao.png",
+      "Haoyou/seach.html",
+      "Haoyou/genduo.html",
+      "js/tap.js",
+      "Haoyou/jiaoyi.html"
+    ],
+    "refer": [
+      "Haoyou/genduo.html",
+      "Haoyou/seach.html",
+      "Haoyou/jiaoyi.html"
+    ]
+  },
+  "kefu.html": {
+    "resources": [
+      "img/kefu/refresh.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/kefu/kefu-portrait.png",
+      "js/tap.js"
+    ],
+    "refer": [
+      "kefu/kefu_communication.html"
+    ]
+  },
+  "kefu/kefu_communication.html": {
+    "resources": [
+      "js/tap.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/public.css",
+      "kefu/images/weibo.png",
+      "kefu/images/saoma.png",
+      "kefu/images/QQ.png",
+      "kefu/images/lianjie.png",
+      "kefu/images/weixin.png"
+    ],
+    "refer": []
+  },
+  "Haoyou/seach.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "Haoyou/genduo.html",
+      "Haoyou/img/fang.png",
+      "Haoyou/jiaoyi.html"
+    ],
+    "refer": [
+      "Haoyou/genduo.html",
+      "Haoyou/jiaoyi.html"
+    ]
+  },
+  "Haoyou/genduo.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "Haoyou/jiaoyi.html",
+      "Haoyou/seach.html"
+    ],
+    "refer": [
+      "Haoyou/jiaoyi.html",
+      "Haoyou/seach.html"
+    ]
+  },
+  "Haoyou/jiaoyi.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "Haoyou/genduo.html",
+      "js/tap.js"
+    ],
+    "refer": [
+      "Haoyou/genduo.html"
+    ]
+  },
+  "Jiekuan/xieyi.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "Jiekuan/jiekuanimages/2.jpg",
+      "Jiekuan/xieyi.css"
+    ]
+  }
+}

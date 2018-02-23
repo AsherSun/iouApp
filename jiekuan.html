@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="Jiekuan/jiekuan.css"/>
+		<link rel="stylesheet" href="css/public.css" />
+	</head>
+
+	<body>
+		<!--header-->
+		<header class="mui-bar mui-bar-nav" id="nav-bg">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">借款</h1>
+		</header>
+		
+		<!--mbody-->
+		<div class="mui-content">
+		    <div class="mui-card">
+				<!--内容区-->
+				<div class="mui-card-content">
+					<ul class="mui-table-view flx">
+					    <li class="mui-table-view-cell mui-media">
+					        <span>当前可借款总额度0元 <a href="">提升额度</a><a href="" class="mui-icon mui-icon-arrowright"></a></span>
+					    </li>
+					    <li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <img class="mui-media-object mui-pull-left" src="jiekuan/jiekuanimages/1.png">
+					            <div class="mui-media-body">
+									借款金额
+									<span class="mui-text-right"><input type="text" name="" class="mui-input-clear" value="" placeholder="请输入整数"/>元</span>
+					            </div>
+					        </a>
+					    </li>
+					    <li class="mui-table-view-cell mui-media">
+					    	<a href="javascript:;">
+					    		<img class="mui-media-object mui-pull-left" src="jiekuan/jiekuanimages/3.png">
+					            <div class="mui-media-body">
+									还款方式
+					            </div>
+					        </a>
+					        <ul class="mui-table-view mui-grid-view mui-grid-9" style="float: left;">
+								<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>等额本息</label>
+										<input name="radio1" type="radio">
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>还本付息</label>
+										<input name="radio1" type="radio">
+									</div>
+								</li>
+							</ul>
+					    </li>
+					    <!--<li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <img class="mui-media-object mui-pull-left" src="jiekuan/jiekuanimages/3.png">
+					            <div class="mui-media-body">
+									还款方式
+					            </div>
+					            
+					        </a>
+					        <ul class="mui-table-view mui-grid-view mui-grid-9">
+								<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+									<div class="mui-input-row mui-radio mui-left">	
+										<lable>等额本息</lable>
+										<input name="radio1" type="radio">
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+									<div class="mui-input-row mui-radio mui-left">
+										<lable>到期还本付息</lable>
+										<input name="radio1" type="radio" style="margin-left: -15px;">
+									</div>
+								</li>
+							</ul>
+					    </li>-->
+					    
+					    <li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <img class="mui-media-object mui-pull-left" src="jiekuan/jiekuanimages/4.png">
+					            <div class="mui-media-body">
+									还款日期
+									<span class="mui-text-right"><input type="text" name="" class="mui-input-clear" value="" placeholder="不超过五年"/>%</span>
+					            </div>
+					        </a>
+					    </li>
+					    <li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <img class="mui-media-object mui-pull-left" src="jiekuan/jiekuanimages/4.png">
+					            <div class="mui-media-body">
+									利率
+									<span class="mui-text-right"><input type="text" name="" class="mui-input-clear" value="" placeholder="0%-24%"/>%</span>
+					            </div>
+					        </a>
+					    </li>
+					    <li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <div class="mui-media-body">
+									<span class="mui-text-right">到期本息合计约为:0.00元</span>
+					            </div>
+					        </a>
+					    </li> 
+					</ul>					
+				</div>
+			</div>
+			
+			<div class="mui-card" style="margin-top:10px ;">
+				<!--内容区-->
+				<div class="mui-card-content">
+					<ul class="mui-table-view flx">
+					    <li class="mui-table-view-cell mui-media">
+					    	<a href="javascript:;">
+					            <div class="mui-media-body">
+									是否需要担保人
+					            </div>
+					        </a>
+					        <ul class="mui-table-view mui-grid-view mui-grid-9">
+								<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>同意</label>
+										<input name="radio1" type="radio">
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>不同意</label>
+										<input name="radio1" type="radio">
+									</div>
+								</li>
+							</ul>
+					    </li>
+					    <li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <div class="mui-media-body">
+									借款用途
+									<span class="mui-text-right"><input type="text" name="" class="mui-input-clear" value="" placeholder="临时周转"/</span>
+					            </div>
+					        </a>
+					    </li>
+					    <li class="mui-table-view-cell mui-media">
+					        <a href="javascript:;">
+					            <div class="mui-media-body">
+									是否公开求借信息
+					            </div>
+					        </a>
+					    </li>
+					    
+					   <li class="mui-table-view-cell mui-media">
+							<input name="checkbox1" value="Item 1" type="checkbox">
+							<label style="font-size: 12px;">已阅读并同意 <a class="xieyi-view-new">相关协议</a></label>
+							<div class="mui-content-padded">
+						    	<button id="login" type="button" class="mui-btn  mui-btn-block">提交</button>
+						    </div>
+					   </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/tap.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			tapNewView(mui('.xieyi-view-new')[0], 'Jiekuan/xieyi.html', 'xieyi');
+		</script>
+	</body>
+
+</html>

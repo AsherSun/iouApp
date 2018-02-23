@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<style type="text/css">
+			.mui-bar{
+				background-color: rgb(230,133,36);
+			}
+			.mui-title{
+				color:#fff;
+			}
+			.mui-bar a{
+				color:#fff;
+			}
+			.mui-bar span{	
+				font-size:17px;
+				line-height: 13px;
+			}
+			.mui-bar-tab .mui-tab-item{
+				color:#fff;
+			}
+			
+			.mui-media-body p{
+				color:#000;
+			}
+			.mui-search{
+				position:absolute;
+				right:5%;
+				top:3px;
+				width:83%;
+				
+			}
+			.mui-search.mui-active:before ,.mui-icon-search:before{
+			    color: #fff;
+			}
+			.mui-search input[type=search] {
+			   background: rgb(230,133,36);
+			   border-radius: 0;
+			   color:#fff;
+			}
+			.mui-search .mui-placeholder{	
+				background: rgb(230,133,36);
+				color: #fff;
+				border-radius: 0;
+			}
+			.mui-search .mui-placeholder{
+				top:5px;
+				height:29px;
+				right:1px;
+				left:5px;
+				text-align: left;
+				
+			}
+			.mui-bar .mui-input-row .mui-input-clear~.mui-icon-clear{
+				top:5px;
+				color:#fff;
+			}
+			
+			.search_die{
+				height:1px;
+				background:#fff;
+				display:block;
+				position:absolute;
+				left:0;
+				right:0;
+				bottom:5px;
+			}
+			.search_die::after,.search_die::before{
+				content: '';
+				position:absolute;
+				display:block;
+				width:2px;
+				height:10px;
+				background:#fff;
+				bottom:0;
+				z-index: 10px;
+			}
+			.search_die:after{
+				left:0;
+			}
+			.search_die:before{
+				right:0;
+			}
+			.mui-content>.mui-table-view:first-child {
+			     margin-top: 0px; 
+			}
+			
+			.mui-table-view-cell{
+				background: #ccc;
+			}
+			.mui-table-view-cell:after{
+				background:#fff;
+			}
+			.search_one{
+				line-height: 42px;
+				color:#000;
+			}
+			.scroll_back{
+				background:#fff;
+			}
+			.search_color{
+				color:rgb(230,133,36);
+			}
+		</style>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
+		    <div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="手机号 / 姓名 / 帐号">
+				<div class="search_die"></div>
+			</div>
+		</header>
+		<style type="text/css">
+			
+		</style>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="jiaoyi.html">
+						<img class="mui-media-object mui-pull-left" src="./img/chenmei.png">
+						<div class="mui-media-body">
+							晨宝
+							<p class='mui-ellipsis'>1234567890</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="./img/chenmei.png">
+						<div class="mui-media-body">
+							晨宝
+							<p class='mui-ellipsis'>1234567890</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img src="./img/fang.png" class="mui-media-object mui-pull-left scroll_back"/>
+						<div class="mui-media-body">
+							<p class='mui-ellipsis search_one'>查找晨晨借条用户 <span class="search_color"> 1234567890</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

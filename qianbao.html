@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/public.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="nav-bg">
+		    <a class="mui-pull-right qianbao-view-shezhi">设置</a>
+		    <h1 class="mui-title qianbao-view-title">钱包</h1>
+		</header>
+		<div class="mui-content">
+			<style>
+				.qianbao-view-listbox{
+					width:100%;
+					background:#FFFFFF;
+					margin-top:10px;
+					padding-bottom:50px;
+				}
+				.qianbao-ulbox{
+					display:flex;
+					flex-flow:wrap row;
+					justify-content:flex-start;
+				}
+				.qianbao-ulbox-list{
+					width:33.33%;
+					height:140px;
+					background:red;
+					list-style:none;
+					border-bottom:1px solid #ddd;
+					display:flex;
+					flex-flow:nowrap column;
+					justify-content:center;
+				}
+				.qianbao-ulbox-list ~ .qianbao-ulbox-list{
+					border-left:1px solid #ddd;
+				}
+			</style>
+		    <div class="qianbao-view-listbox">
+		    	<ul class="qianbao-ulbox">
+		    		<li class="qianbao-ulbox-list">
+		    			<img src="Qianbao/images/chenmei.png" alt="" />
+		    			<span>晨妹</span>
+		    		</li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    	</ul>
+		    	<ul class="qianbao-ulbox">
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    	</ul>
+		    	<ul class="qianbao-ulbox">
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    	</ul>
+		    	<ul class="qianbao-ulbox">
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    		<li class="qianbao-ulbox-list"></li>
+		    	</ul>
+		    </div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+		</script>
+	</body>
+
+</html>

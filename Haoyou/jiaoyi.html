@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+		<style type="text/css">
+			html,body{
+				height:100%;
+				background:#fff;
+			}
+			.mui-bar-nav{
+				background-color: rgb(230,133,36);
+				box-shadow: none;
+				/*-webkit-box-shadow:0 ;*/
+			}
+			.mui-title{
+				color:#fff;
+			}
+			.mui-bar a{
+				color:#fff;
+			}
+			.mui-bar span{	
+				font-size:17px;
+			}
+			.mui-card-media{
+				background-color: rgb(230,133,36);	
+			}
+			
+			.mui-card-header>img:first-child{
+				width:75px;
+				height:75px;
+			}
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+				border:0;
+			}
+			.mui-card-header.mui-card-media .mui-media-body{
+				line-height: 25px;
+				font-size:16px;
+				margin-left:85px;
+			}
+			.mui-card-header.mui-card-media .mui-media-body p{
+				color:#000000;
+			}
+			.sc_p span{
+				margin-right:10px;
+				border:1px solid #fff;
+				padding:1px 5px;				
+				font-size:12px;
+				font-family: "微软雅黑";
+			}
+			.sc_p .sc_my{
+				color:#fff;
+				line-height: 25px;
+				padding:1px 10px 1px 3px;
+			}
+			.sc_poi{
+				position:absolute;
+				bottom:15px;
+				right:10px;
+				border:1px solid #fff;
+				padding:4px 7px;
+			}
+			.sc_poi a{
+				color:#fff;
+				font-size:12px;
+				
+			}
+			.sc_poi a span{
+				margin-left:2px;
+			}
+			.mui-control-content {
+				background-color: white;
+				min-height:400px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			.mui-table-view-cell{
+				border-bottom: 1px solid #CCCCCC;
+			}
+			.mui-table-view-cell:after {
+			    height: 0px; 			   
+			}
+			.xg{
+				padding:8px 0;
+				border-top:8px solid #ccc;
+				border-bottom: 2px solid #ccc;
+				font-family: "方正兰亭黑";
+				border-radius: 0;
+				background:#fff;
+			}
+			.xg span{
+				border-left:8px solid #e68524;
+				padding-left:5px;
+				font-size:15px;
+			}
+			.mui-slider-indicator{
+				background:#fff;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+			    background-color: rgb(230,133,36);	
+			} 
+			.scroll_p{
+				text-align: center;
+				color:#333333;
+				font-size:16px;
+				margin-top:30%;
+			}
+		</style>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-back mui-pull-left mui-action-back" ></a>
+		    <a class="mui-icon mui-icon-more mui-pull-right header-view-genduo"></a>
+		</header>
+		
+	 	<div class="mui-content">
+			<!--个人信息-->
+			<div class="mui-card-header mui-card-media">
+				<img class="mui-media-object mui-pull-left" src="./img/chenmei.png">
+				<div class="mui-media-body">
+					王**
+					<p>手机号码：<span>121231241321</span></p>
+					<p class="sc_p"><span class="sc_my">实名</span><span  class="sc_my">肖像</span><span>银行卡</span></p>
+				</div>
+				<div class="sc_poi"><a class="mui-icon mui-icon-plus mui-pull-right" href="genduo.html"><span>更多</span></a></div>
+			</div>
+			
+			<!--选项卡-->
+			
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+				主页
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+				交易
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+				动态
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<!--主页-->
+					<div id="item1mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-1
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-1
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-1
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-1
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--交易-->
+					<div id="item2mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<div class="mui-card-header xg"><span>交易记录</span></div>
+									
+									<li class="mui-table-view-cell">
+										<a>类型
+											<span class="mui-action-back mui-pull-right">借钱给TA</span>
+										</a>		
+									</li>
+									<li class="mui-table-view-cell">	
+										<a>累计笔数
+											<span class="mui-action-back mui-pull-right">0</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a>当前金额
+											<span class="mui-action-back mui-pull-right">0</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a>已清偿金额
+											<span class="mui-action-back mui-pull-right">0</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--动态-->
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<p class="scroll_p">添加好友之后才能看到TA的动态哦~</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>	
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/tap.js"></script>
+		<script type="text/javascript">
+			
+//			选项卡
+			(function($) {
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+			
+			//跳转场景
+			tapNewView(mui('.header-view-genduo')[0], 'genduo.html', 'genduo');
+			
+		</script>
+	</body>
+
+</html>
